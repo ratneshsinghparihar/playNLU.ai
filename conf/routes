@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+POST      /getNERClassification           controllers.nlpController.getNERClassification
+POST      /getSentiment                   controllers.nlpController.getSentiment
+POST      /getTextAnalysis                   controllers.nlpController.getTextAnalysis
+POST      /getTextAnalysisALL                   controllers.nlpController.getTextAnalysisALL
+POST      /getAllNLPFromBatch                   controllers.nlpController.getAllNLPFromBatch
+POST      /getPOSFromBatch                   controllers.nlpController.getPOSFromBatch
+POST      /getTopics                   controllers.nlpController.getTopics
+POST      /searchTopics                   controllers.nlpController.searchTopics
+POST      /classifyTopics                   controllers.nlpController.classifyTopics
+POST      /classifyTopicsWithModel                   controllers.nlpController.classifyTopicsWithModel
+POST      /getOpenIEInformation                   controllers.nlpController.getOpenIEInformation
+POST      /getPersonalityFromContent                   controllers.nlpController.getPersonalityFromContent
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
