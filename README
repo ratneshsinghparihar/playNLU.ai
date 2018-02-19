@@ -1,6 +1,7 @@
 1. playNLU is distributed framework built on spark 
 2. provides NLU functionalities (topic modeling ,discovery ,classification , sentiments, parser,ner,word segmenter, classifier,coreference,
-relations, pos, diablogue, story , question and answers ,information extraction)
+relations, pos, diablogue, story , question and answers ,information extraction,personality traits)
 3. api is provided by rest and kafka stream apis 
 4. supports standford NLP models
+
 
